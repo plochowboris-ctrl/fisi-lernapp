@@ -1,0 +1,6 @@
+# Lokale Einstellungen von Claude Code (enthalten Pfade dieses PCs)
+.claude/
+
+# Windows
+Thumbs.db
+desktop.ini

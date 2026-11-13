@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>FISI Lernapp</title>
+  <meta name="description" content="Lern-App für die Abschlussprüfung Fachinformatiker/in Systemintegration">
+  <meta name="theme-color" content="#6c4cf5">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="FISI Lernen">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="icons/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="logo"><span class="logo-badge">FI</span> FISI Lernapp</a>
+    <div class="stats">
+      <span class="stat feuer" id="statSerie" title="Lernserie in Tagen">🔥 0</span>
+      <span class="stat xp" id="statXp" title="Erfahrungspunkte">⭐ 0</span>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="Hauptnavigation">
+    <a href="#/" data-route="" class="f-start"><span class="ico">🏠</span>Start</a>
+    <a href="#/lernen" data-route="lernen" class="f-lernen"><span class="ico">📖</span>Lernen</a>
+    <a href="#/ueben" data-route="ueben" class="f-quiz"><span class="ico">🎯</span>Üben</a>
+    <a href="#/fortschritt" data-route="fortschritt" class="f-stand"><span class="ico">📊</span>Stand</a>
+  </nav>
+
+  <script src="data/fragen.js"></script>
+  <script src="data/karten.js"></script>
+  <script src="js/speicher.js"></script>
+  <script src="js/subnetting.js"></script>
+  <script src="js/lektionen.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
